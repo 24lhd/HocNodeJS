@@ -1,0 +1,185 @@
+/**
+ *                  NodeJS
+ * - Phát triển 2009
+ * - Nó làm được gì:
+ *      + Websocket Server
+ *      + Upload file clients
+ *      + Máy chủ quảng cáo (Ad server)
+ *      + Dịch vụ đám mây (cloud service)
+ *      + Nhiều dịch vụ nhỏ
+ *      +  xây dụng API
+ * 
+ * - Đặc điểm:
+ *      +Không đa luồng
+ */
+  ------------------------Phím tắt hỗ trợ-------------------------------------------
+
+
+ ------------------------Command Line-------------------------------------------
+- dir
+- cd
+- mkdir
+- echo ghi 1 file
+
+------------------------------Funtion-------------------------------------
+
+Là một hàm có thể có tên hoặc không có tên.
+
+Tái sử dụng các đoạn mã
+
+------------------------------First -class Funtion-------------------------------------
+
+- Là một hàm được sử dụng như object
+
+- Trong JavaScript hàmcó thể :
+        + Làm tham số của hàm
+        + giá trị trả về của một hàm
+        + gán cho một biến
+
+------------------------------Biểu thức-------------------------------------
+Là một khối hoặc đoạn mã mà giá trị trả về nó là một giá trị
+ví dụ : a=1;
+------------------------Module-------------------------------------------
+              
+-Khi tạo thì dùng: module.exports
+-Khi gọi thì dùng: require
+
+- Do tính chất đóng gói cửa module cũng như cách thiết kế của nodejs
+nên ta không thể gọi được các đối tượng từ module khác mà không dùng module.exports
+- khi require một module khác khi chạy sẽ chạy các lệnh được gọi từ module đo
+
+
+------------------------------ Debug -------------------------------------
+- Variables là các biến
+    
+------------------------------ Hướng đối tượng là object literal -------------------------------------
+
+-Name/Value:
+
+    + Là một cặp tên ánh xạ với một giá trị
+    + trong 1 ngữ cảnh thì Name có thể định nghĩa nhiều hơn 1 lần nhưng chỉ có 1 giá trị Value
+    + Value thì có nhiều cặp Name/Value khác
+
+- Object:
+
+    + là tập hợp các cặp Name/Value
+    + là cách định nghĩa đơn giản nhất trong JavaScript
+    + các kiểu Value có thể mang: String, Number...., Object, Funtion
+
+- Object Literal: 
+
+    +Là cách khai báo nhanh một đối tượng trong JavaScript
+    + gồm các cặp Value cách nhau = dấu ,
+    vd:{
+        Name:"Dương",
+        Age:"21",
+        Address:{
+            City:"Hà Nội",
+            Country:"Việt Nam"
+        },
+        diHoc:function(){
+            console.log("di học");
+        }
+    }
+
+
+
+------------------------------ hàm khởi tạo (Contructor) -------------------------------------
+- hàm để khởi tạo mới một đối tượng
+- nó đung this để truy cập tới các biến của đối tượng hoặc khởi tạo mới
+------------------------------ kế thừa prototype -------------------------------------
+    -sự kế thừa đặc biệt
+    - mọi object nó đều trỏ đến prototype nên việc định nghĩa thuộc tinh prototype thì
+     obj.prototype.prop cso thể được
+    gọi trực tiếp obj.prop
+    - prototype này cũng có thể trỏ đến prototype khác
+    - obj có thể truy nhập tất cả các thuộc tính prototype
+
+------------------------------ biến tham trị và biến tham chiếu -------------------------------------
+- biến nguyên thủy: // quá trình truyền tham trị
+    int a=0; nhận 1 ô nhớ
+    int b=1; nhận 1ô nhớ
+    truyền vào hàm b=a; thì b sẽ bằng với a nhưng lại ở ô nhớ khác
+    khi b thay đổi thì a không bị ảnh hưởng. do nó nằm ở 2 vùng nhớ khác nhau
+
+- truyền vào hàm 1 Object: // quá trình truyền tham chiếu
+    Object A;
+    truyền vào hàm B=A; thì cả B và A đều trỏ tới một vùng nhớ nên khi 
+    tác động đến giá trị của B thì chũng ta cũng làm thay đổi A
+
+------------------------------ Thực thi hàm ngay khi được khởi tạo {scope}-------------------------------------
+// hàm này được thực thi ngay sau khi được khởi tạo,
+// phong cách khai báo hàm nhanh và tiện cho sử dụng 1 lần và không có khả năng tái sử dụng
+(function(thamso){ 
+    console.log(thamso);
+}("Truyen tham so thong qua"));
+
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+------------------------------ -------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
