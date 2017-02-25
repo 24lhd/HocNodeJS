@@ -1,5 +1,5 @@
-var say=require("./function");
-say("say require");
+require("./function");
+
 /**
  * 
  * require nó k phải là 1 key word của nodejs

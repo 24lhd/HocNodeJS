@@ -47,6 +47,7 @@ ví dụ : a=1;
 - Do tính chất đóng gói cửa module cũng như cách thiết kế của nodejs
 nên ta không thể gọi được các đối tượng từ module khác mà không dùng module.exports
 - khi require một module khác khi chạy sẽ chạy các lệnh được gọi từ module đo
+- require là một hàm trong lõi của js
 
 
 ------------------------------ Debug -------------------------------------
@@ -115,23 +116,53 @@ nên ta không thể gọi được các đối tượng từ module khác mà k
 }("Truyen tham so thong qua"));
 
 
------------------------------- -------------------------------------
+------------------------------ bên trong require -------------------------------------
+đọc nội dung của file ở đường dẫn truyền vào và bọc nó với một hàm không tên
 
------------------------------- -------------------------------------
+------------------------------ mảng trong js-------------------------------------
+.....Cách 1
+var name_array = new Array();
+// Hoặc
+var name_array = new Array(1,2,3);
 
------------------------------- -------------------------------------
+.....Cách 2
+var name_array = [];
+// Hoặc
+var name_array = [1,2,3];
+....Truy xuất:
+var t = new Array(1,2,3);
+alert(t[0]); // kết quả là 1
+alert(t[1]); // kết quả là 2
+alert(t[2]); // kết quả là 3
 
------------------------------- -------------------------------------
+------------------------------ JSON -------------------------------------
 
------------------------------- -------------------------------------
+- bọc bởi dấu ngoặc nhọn {}
+- các Key và Value thì đều nằm trong "dấu nháy kép"
+- muốn sử dụng dấu nháy kép thì \"\"
+- nhiều cặp Key/Value thì dùng dấu , để ngăn cách
+------------------------------ sử dụng module dựng sắn -------------------------------------
+- xem và tìm hiểu ở trang : https://nodejs.org/dist/latest-v6.x/docs/api/
 
------------------------------- -------------------------------------
+- 
 
------------------------------- -------------------------------------
+------------------------------ tính năng ES6 trong JavaScript-------------------------------------
+- 3 tính năng :
+    +shipping : tính năng ổ định và được bật trong nodejs
+    + staged: có thể sử dụng bằng khai báo cờ
+    +in progress thử nghiệm và có thể hoạt động
 
------------------------------- -------------------------------------
+------------------------------ Event và EventEmitter-------------------------------------
+- có 2 loại sự kiện :
+    + Custem Event:
+    + System Event: 
+------------------------------ Cách truy cập thuộc tính của obj , array-------------------------------------
 
------------------------------- -------------------------------------
+------------------------------Event Emitter -------------------------------------
+    <string name="ads_banner">ca-app-pub-7062977963627166/8486433733</string>
+
+------------------------------ Object.create-------------------------------------
+- 1 cách để khởi tạo 1 đối tượng
 
 ------------------------------ -------------------------------------
 
