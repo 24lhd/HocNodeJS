@@ -1,0 +1,32 @@
+h2{
+	color: #E595B0;
+	background-color: green;
+	font-family:verdana;
+	font-size: 200%;
+}
+p{
+	border: 1px solid red;
+	 background-color: #1CE0E2;
+	 margin: 10px;
+	 border-radius: 10px;
+}
+#padding{
+	padding: 1em;
+}
+#magin{
+	margin: 30px;
+}
+
+a:link    {color:green; background-color:transparent; text-decoration:none}
+a:visited {color:pink; background-color:transparent; text-decoration:none}
+a:hover{
+	color: #0FF;
+	text-decoration: none;
+}
+a:active  {color:yellow; background-color:transparent; text-decoration:underline}
+table, th, td {
+    border: 1px solid black;
+     /*border-collapse: collapse;*/
+      border-spacing: 5px;
+      border-collapse: 10px;
+}
