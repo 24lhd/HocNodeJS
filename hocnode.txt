@@ -271,14 +271,22 @@ khác nhau
 
 ------------------------------ http -------------------------------------
 
------------------------------- -------------------------------------
+------------------------------ API và Endpoint-------------------------------------
+-Endpoint là một url cụ thể trong ứng dụng web api
+- Endpoint có thể làm dc nhiều thứ thông qua cách gọi theo giao thức HTTP : GET, POST, PUT, DELETE
+- xử lý phụ thuộc vào định dạng  dữ liệu gửi tới Endpoint
+------------------------------ Cách định tuyến trong nodejs-------------------------------------
+- ánh xạ yêu cầu tới HTTP tới 1 tài nguyên server
+- như tải ảnh thì sẽ tìm tới và trả lại bức ảnh đó k thì trả về mã lỗi 404 not found
+- khi ng dùng gửi 1 url request thì trong header sẽ nhận url đó và xử lý tương ứng
 
------------------------------- -------------------------------------
+------------------------------ sử dụng framework expressjs-------------------------------------
+- dịnh tuyến
+- download upload file
 
------------------------------- -------------------------------------
-
------------------------------- -------------------------------------
-
+------------------------------ npm quản lý package  -------------------------------------
+-tự động cài đặt, cập nhật và nâng cấp package
+- pg lodash sử dụng với các mảng
 ------------------------------ -------------------------------------
 
 ------------------------------ -------------------------------------
