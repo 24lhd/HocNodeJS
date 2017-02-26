@@ -5,7 +5,7 @@ var opitions={// cấu hình định dạng đọc
 }
 var readable=fs.createReadStream(__dirname+"/hocnode.txt",opitions);
 readable.on('data',function(chuck){ // bắt sự kiện data
-    console.log(chuck.length);
+    console.log(chuck.length);// sử dụng on dc vì nó là 1 events emitter
     writeable.write(chuck);
 });
 
